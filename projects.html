@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#eaf4fc">
-    <meta name="description" content="Hardware, IoT, embedded systems, and robotics projects by Fachri Abyasa Tarid.">
+    <meta name="description" content="Hardware, IoT, embedded systems, and web-integrated projects by Fachri Abyasa Tarid.">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,52 +40,29 @@
         <div class="wrap">
           <h1>Projects</h1>
           <p class="hero-lead">
-            Hardware, IoT, embedded systems, and mechanical robotics builds from university partnerships and coursework.
+            Hardware, IoT, embedded systems, and monitoring builds from university partnerships and coursework.
           </p>
 
           <div class="filters" role="group" aria-label="Filter projects by category" id="filters">
             <button type="button" class="chip" data-filter="all" aria-pressed="true">All</button>
             <button type="button" class="chip" data-filter="iot" aria-pressed="false">IoT &amp; Embedded</button>
-            <button type="button" class="chip" data-filter="robotics" aria-pressed="false">Robotics &amp; Mechanical</button>
             <button type="button" class="chip" data-filter="web-ml" aria-pressed="false">Web &amp; ML Integration</button>
-            <p class="filter-status" role="status">Showing all 4 projects</p>
+            <p class="filter-status" role="status">Showing all 3 projects</p>
           </div>
           <p class="empty" id="empty" hidden>No projects match this filter.</p>
         </div>
       </section>
 
       <section class="wrap project-stack" aria-label="Project list">
-        <article class="project-entry" id="thermal-fan" data-categories="iot">
-          <div class="project-top">
-            <h2>Thermal-Tracking Smart Fan</h2>
-            <span class="status-badge">GitHub Repo Live</span>
-          </div>
-          <p class="project-meta">IoT · Multi-Node Control · Arduino Mega 2560 · ESP32 · DHT22</p>
-          <ul class="project-points">
-            <li>Built a 4-node UART sensor network where each ESP + DHT22 node samples temperature and humidity every 2 seconds and streams formatted telemetry (<code>ESPx;T=..;H=..</code>) to an Arduino Mega.</li>
-            <li>Programmed the Arduino Mega main controller across <code>Serial1</code>, <code>Serial2</code>, <code>Serial3</code>, and <code>Serial0</code> to parse readings and smoothly sweep a 180° servo (<code>0°</code>, <code>45°</code>, <code>90°</code>, <code>135°</code>) toward hot zones exceeding <code>32.0 °C</code>.</li>
-          </ul>
-          <div class="tag-row">
-            <span class="tag">Arduino Mega</span>
-            <span class="tag">ESP32</span>
-            <span class="tag">DHT22</span>
-            <span class="tag">UART Multi-Node</span>
-            <span class="tag">180° Servo</span>
-          </div>
-          <div class="project-links">
-            <a class="btn btn-primary" href="https://github.com/nnnirmala/thermal-tracking-smart-fan" target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
-          </div>
-        </article>
-
         <article class="project-entry" id="cow-heat-stress" data-categories="iot web-ml">
           <div class="project-top">
-            <h2>Cow Heat Stress Mitigation System</h2>
+            <h2>COSTMOSYS (Cow Stress Monitoring System)</h2>
             <span class="status-badge">Ongoing · Fapet IPB Partnership</span>
           </div>
           <p class="project-meta">Hardware &amp; IoT · ESP32 · Web Dashboard · Machine Learning</p>
           <ul class="project-points">
-            <li>Designed an ESP32-based barn environment monitoring system streaming real-time temperature and humidity data to a team-developed web dashboard, paired with automated sprinkler actuator control triggered above safe thresholds.</li>
-            <li>Integrated CCTV camera feeds with a Machine Learning pipeline to detect cow heat-stress behaviors such as prolonged lying patterns versus normal activity.</li>
+            <li>Designed an ESP32-based barn environment monitoring system to stream real-time temperature and humidity data to a team-developed web dashboard, paired with automated sprinkler actuator control triggered above safe thresholds.</li>
+            <li>Integrated CCTV camera feeds with a Machine Learning model to detect cow stress behaviors (such as prolonged lying patterns vs. normal activity).</li>
           </ul>
           <div class="tag-row">
             <span class="tag">ESP32</span>
@@ -93,29 +70,15 @@
             <span class="tag">Web Dashboard</span>
             <span class="tag">CCTV + ML</span>
           </div>
-        </article>
-
-        <article class="project-entry" id="antrac" data-categories="robotics">
-          <div class="project-top">
-            <h2>ANTRAC — Chili Plant Health Monitoring Robot</h2>
-            <span class="status-badge">Mechanical &amp; Robotics</span>
-          </div>
-          <p class="project-meta">Mechanical Engineering · Robotics · Hardware Integration</p>
-          <ul class="project-points">
-            <li>Designed and assembled the hollow-steel mechanical chassis for the ANTRAC agricultural robot, structurally tested to support loads equivalent to 3 adults.</li>
-            <li>Engineered precision mounting frames to integrate drive systems, plant-monitoring sensors, and electronic control modules cleanly.</li>
-          </ul>
-          <div class="tag-row">
-            <span class="tag">Hollow-Steel Chassis</span>
-            <span class="tag">Agricultural Robotics</span>
-            <span class="tag">Hardware Integration</span>
+          <div class="project-links">
+            <a class="btn btn-primary" href="https://github.com/makhdanramadhan-ui/COSTMOSYS" target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
           </div>
         </article>
 
         <article class="project-entry" id="rfid-smart-lab" data-categories="iot web-ml">
           <div class="project-top">
             <h2>RFID-Based Smart Lab &amp; Temperature Monitoring System</h2>
-            <span class="status-badge">IoT &amp; Embedded</span>
+            <span class="status-badge">GitHub Repo Live</span>
           </div>
           <p class="project-meta">IoT · Embedded Systems · RFID · Web Dashboard</p>
           <ul class="project-points">
@@ -127,6 +90,30 @@
             <span class="tag">Temperature Monitoring</span>
             <span class="tag">Buzzer Alert</span>
             <span class="tag">Web Dashboard</span>
+          </div>
+          <div class="project-links">
+            <a class="btn btn-primary" href="https://github.com/Faizylux/C-Labs-Monitoring" target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
+          </div>
+        </article>
+
+        <article class="project-entry" id="thermal-fan" data-categories="iot">
+          <div class="project-top">
+            <h2>Thermal-Tracking Smart Fan</h2>
+            <span class="status-badge">GitHub Repo Live</span>
+          </div>
+          <p class="project-meta">IoT · Multi-Node Control · Arduino Mega · ESP32</p>
+          <ul class="project-points">
+            <li>Developed a multi-node smart fan architecture using an ESP32 with a DHT22 sensor as the temperature node and an Arduino Mega as the main control unit.</li>
+            <li>Integrated a 180° servo motor to automatically rotate and direct airflow toward the area with the highest temperature reading.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Arduino Mega</span>
+            <span class="tag">ESP32</span>
+            <span class="tag">DHT22</span>
+            <span class="tag">180° Servo</span>
+          </div>
+          <div class="project-links">
+            <a class="btn btn-primary" href="https://github.com/nnnirmala/thermal-tracking-smart-fan" target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
           </div>
         </article>
       </section>

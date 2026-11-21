@@ -492,8 +492,8 @@ a:hover {
 .media-item video {
   width: 100%;
   max-width: 100%;
-  height: 185px;
-  object-fit: cover;
+  height: 240px;
+  object-fit: contain;
   display: block;
   background: #0f233a;
 }

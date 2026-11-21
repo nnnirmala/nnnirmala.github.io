@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eaf4fc">
+    <meta name="description" content="Portfolio of Fachri Abyasa Tarid — Computer Engineering Technology student at IPB University focused on IoT, embedded systems, robotics, and networking.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+    <title>Fachri Abyasa Tarid — IoT, Embedded &amp; Hardware Portfolio</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">F</span>
+          <span>Fachri Abyasa Tarid</span>
+        </a>
+        <nav aria-label="Main navigation">
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+          <ul id="nav-menu" class="nav-list">
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div>
+            <span class="role-pill">Open to Hardware, IoT, Embedded &amp; Networking Internships</span>
+            <h1>Building connected hardware, from sensor nodes to field prototypes.</h1>
+            <p class="hero-lead">
+              I'm <strong>Fachri Abyasa Tarid</strong>, a Computer Engineering Technology student at IPB University
+              building end-to-end IoT prototypes, embedded ESP32 &amp; Arduino systems, mechanical robot frames,
+              and Cisco-based network topologies.
+            </p>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="projects.html">Explore Projects</a>
+              <a class="btn btn-secondary" href="https://github.com/nnnirmala" target="_blank" rel="noopener noreferrer">GitHub @nnnirmala</a>
+            </div>
+          </div>
+
+          <aside class="spec-card" aria-label="Quick profile summary">
+            <h2>Profile Snapshot</h2>
+            <dl class="spec-list">
+              <div class="spec-item">
+                <dt class="spec-label">University</dt>
+                <dd class="spec-value">IPB University (D4 TRK)</dd>
+              </div>
+              <div class="spec-item">
+                <dt class="spec-label">Academic Standing</dt>
+                <dd class="spec-value">Semester 5 · GPA 3.58 / 4.00</dd>
+              </div>
+              <div class="spec-item">
+                <dt class="spec-label">Core Focus</dt>
+                <dd class="spec-value">IoT, Embedded &amp; Networking</dd>
+              </div>
+              <div class="spec-item">
+                <dt class="spec-label">Location</dt>
+                <dd class="spec-value">Bekasi &amp; Bogor, Indonesia</dd>
+              </div>
+              <div class="spec-item">
+                <dt class="spec-label">Languages</dt>
+                <dd class="spec-value">Indonesian, English</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="featured-projects">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <h2>Featured Projects</h2>
+              <p class="section-sub">Selected hardware, embedded, and robotics builds.</p>
+            </div>
+            <a href="projects.html">See all project details</a>
+          </div>
+
+          <div class="grid-2">
+            <article class="card">
+              <span class="status-badge">Ongoing · Fapet IPB Partnership</span>
+              <h3><a href="projects.html#cow-heat-stress">Cow Heat Stress Mitigation System</a></h3>
+              <p>ESP32 barn environment monitoring streaming real-time temperature/humidity to a web dashboard, paired with automated sprinkler control and CCTV ML behavior detection.</p>
+              <div class="tag-row">
+                <span class="tag">ESP32</span>
+                <span class="tag">Web Dashboard</span>
+                <span class="tag">Machine Learning</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <span class="status-badge">Repo Available</span>
+              <h3><a href="projects.html#thermal-fan">Thermal-Tracking Smart Fan</a></h3>
+              <p>Multi-node UART architecture using ESP + DHT22 temperature nodes and an Arduino Mega main controller driving a 180° servo toward hot zones.</p>
+              <div class="tag-row">
+                <span class="tag">Arduino Mega</span>
+                <span class="tag">ESP32 / DHT22</span>
+                <span class="tag">180° Servo</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <span class="status-badge">Robotics &amp; Mechanics</span>
+              <h3><a href="projects.html#antrac">ANTRAC — Chili Plant Monitoring Robot</a></h3>
+              <p>Designed and assembled the hollow-steel mechanical chassis and precision mounting frames for drive systems, plant sensors, and electronic control modules.</p>
+              <div class="tag-row">
+                <span class="tag">Hollow Steel</span>
+                <span class="tag">Robotics</span>
+                <span class="tag">Hardware Integration</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <span class="status-badge">Embedded &amp; Access Control</span>
+              <h3><a href="projects.html#rfid-smart-lab">RFID Smart Lab &amp; Temp Monitoring</a></h3>
+              <p>RFID door access control with card validation alongside room temperature monitoring, buzzer alerts, and real-time web dashboard notifications.</p>
+              <div class="tag-row">
+                <span class="tag">RFID</span>
+                <span class="tag">Embedded Systems</span>
+                <span class="tag">Web Dashboard</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <h2>Technical Skills</h2>
+              <p class="section-sub">Hands-on tooling across hardware, networking, software integration, and mechanical fabrication.</p>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <article class="card">
+              <h3>Hardware &amp; IoT</h3>
+              <p>ESP32, Arduino Mega, DHT22 sensors, RFID modules, 180° servo motors, sprinkler actuators, buzzers, and multi-node UART architectures.</p>
+            </article>
+            <article class="card">
+              <h3>Networking &amp; Security</h3>
+              <p>Routing &amp; switching, VLAN, Inter-VLAN routing, STP, EtherChannel, IPv4/IPv6 subnetting, WLAN, local network security, and Cisco Packet Tracer.</p>
+            </article>
+            <article class="card">
+              <h3>Software, Web &amp; ML Integration</h3>
+              <p>IoT monitoring web dashboards and integrating CCTV video feeds with Machine Learning pipelines for animal behavior detection.</p>
+            </article>
+            <article class="card">
+              <h3>Mechanical Engineering</h3>
+              <p>Structural frame design and assembly using hollow steel, load testing, and mechanical-electronic integration for mobile robotics.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <h2>Education &amp; Certificates</h2>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <article class="card">
+              <span class="status-badge">2024 – Present · Angkatan 61</span>
+              <h3>IPB University, Vocational School</h3>
+              <p><strong>Teknologi Rekayasa Komputer</strong> (D4 Applied Bachelor in Computer Engineering Technology) · GPA 3.58 / 4.00.</p>
+              <p>Relevant coursework: Embedded Systems, Robotics, Machine Learning, Cybersecurity, Computer Networks.</p>
+            </article>
+
+            <article class="card">
+              <span class="status-badge">Cisco Networking Academy</span>
+              <h3>Course Completion Certificates</h3>
+              <p><strong>CCNA: Switching, Routing, and Wireless Essentials</strong> (17 Dec 2025) — VLANs, Inter-VLAN routing, STP, EtherChannel, WLAN, and local security.</p>
+              <p><strong>CCNA: Introduction to Networks</strong> (29 Dec 2024) — OSI/TCP-IP, IPv4/IPv6 subnetting, and end-to-end router/switch connectivity.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="wrap footer-inner">
+        <div>
+          <strong>Fachri Abyasa Tarid</strong> · Bekasi, West Java
+        </div>
+        <div class="footer-links">
+          <a href="mailto:fachri.abyasa19@gmail.com">fachri.abyasa19@gmail.com</a>
+          <a href="https://github.com/nnnirmala" target="_blank" rel="noopener noreferrer">github.com/nnnirmala</a>
+          <a href="tel:+6281586750090">+62 815-8675-0090</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

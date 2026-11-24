@@ -47,7 +47,7 @@
             <button type="button" class="chip" data-filter="all" aria-pressed="true">All</button>
             <button type="button" class="chip" data-filter="iot" aria-pressed="false">IoT &amp; Embedded</button>
             <button type="button" class="chip" data-filter="web-ml" aria-pressed="false">Web &amp; ML Integration</button>
-            <p class="filter-status" role="status">Showing all 3 projects</p>
+            <p class="filter-status" role="status">Showing all 4 projects</p>
           </div>
           <p class="empty" id="empty" hidden>No projects match this filter.</p>
         </div>
@@ -146,6 +146,34 @@
           </div>
           <div class="project-links">
             <a class="btn btn-primary" href="https://github.com/nnnirmala/thermal-tracking-smart-fan" target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
+          </div>
+        </article>
+
+        <article class="project-entry" id="soil-ph" data-categories="iot web-ml">
+          <div class="project-top">
+            <h2>IoT Soil pH Monitoring System</h2>
+            <span class="status-badge">GitHub Repo &amp; Wokwi Live</span>
+          </div>
+          <p class="project-meta">IoT · ESP32-S3 · Custom Wokwi Chip · MQTT · ThingsBoard</p>
+          <ul class="project-points">
+            <li>Built a custom Wokwi analog pH sensor chip (<code>ph-sensor.chip.c</code>) wired to an ESP32-S3 DevKitC-1 to simulate real-time soil pH readings (0–14) via 12-bit ADC.</li>
+            <li>Streamed JSON telemetry (<code>ph_tanah</code> and <code>Asam</code>/<code>Ideal</code>/<code>Basa</code> status) over MQTT to a ThingsBoard dashboard with live gauge and timeseries history.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">ESP32-S3</span>
+            <span class="tag">Wokwi Custom Chip</span>
+            <span class="tag">MQTT</span>
+            <span class="tag">ThingsBoard</span>
+          </div>
+          <div class="media-grid">
+            <figure class="media-item">
+              <video controls preload="metadata" src="https://github.com/nnnirmala/nnnirmala.github.io/releases/download/media-v1/soil-ph-demo.mp4"></video>
+              <figcaption>Wokwi &amp; ThingsBoard Demo</figcaption>
+            </figure>
+          </div>
+          <div class="project-links">
+            <a class="btn btn-primary" href="https://github.com/nnnirmala/soil-ph-iot-thingsboard" target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
+            <a class="btn btn-secondary" href="https://wokwi.com/projects/461304252599949313" target="_blank" rel="noopener noreferrer">Live Wokwi Simulation</a>
           </div>
         </article>
       </section>
